@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculator</h1>
+    input number 1 <input tybe="text" id="n1">
+    <br>
+    input number 2 <input tybe="text" id="n2">
+    Operator
+    <select id="Operator">
+        <br>
+        <br>
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <br>
+    <br>
+    Result <input tybe="text" id="result">
+    <button onclick="myFunction()"> submit</button>
+    <script tybe="text/javascript">
+        function myFunction(){
+            var n1 = document.getElementById('n1').valua;
+            var n2 = document.getElementById('n2').valua;
+            var Operator = document.getElementById('Operator').valua;
+            var result = 0;
+            if(Operator=="+"){
+                result = parseInt(n1) + parseInt(n2);
+            }else if(Operator=="-"){
+                result = parseInt(n1) - parseInt(n2);
+            }else if(Operator=="*"){
+                result = parseInt(n1) * parseInt(n2);
+        }else if(n2==0){
+            alert("can not div 0");
+
+        }else{
+            result = parseInt(n1) / parseInt(n2);
+        }
+    
+
+        document.getElementById('result').valua =  result;
+    }
+
+    </script>
+
+
+
+    
+</body>
+</html>
